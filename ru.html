@@ -10,8 +10,8 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="styles/ddbb6e8d.vendor.css">
-        <link rel="stylesheet" href="styles/0dcf29ce.main.css">
+        <link rel="stylesheet" href="/styles/ddbb6e8d.vendor.css">
+        <link rel="stylesheet" href="/styles/0dcf29ce.main.css">
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -22,14 +22,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <div>
-                        <a href="/ru">Ru</a>
-                        <a href="/">En</a>
-                        <a href="/he">He</a>
+                    <div class="lang-switcher">
+                        <a href="/ru" class="active" title="Русский">Ru</a>
+                        <a href="/" title="Английский">En</a>
+                        <a href="/he" title="Иврит">He</a>
                     </div>
                     <div class="photo-header text-center">
                         <div class="photo">
-                            <img src="images/bcfda2a6.avatarS.png" title="avatar" alt="avatar">
+                            <img src="/images/bcfda2a6.avatarS.png" title="avatar" alt="avatar">
                         </div>
                         <div class="text-header">
                             <h1>Привет,<br>
@@ -47,31 +47,32 @@
                             <h3>HTML</h3>
                             <i class="html"></i>
                             <p>
-                                HTML, CSS, SASS/SCSS.
+                                HTML, CSS, SASS/SCSS/Compass.
                             </p>
                         </li>                        
                         <li class="col-xs-6 col-sm-6 col-md-3">
                             <h3>JavaScript</h3>
                             <i class="javaScript"></i>
                             <p>
-                                Native JavaScript, 
-                                jQuery, OOP, MVC/MV*,
-                                JSHint, AJAX, JSON, REST, APIs.
+                                Vanilla JS, AngularJS 1.x,
+                                jQuery, NodeJS, PhantomJS, Google API,
+                                JSHint, AJAX, JSON, REST, APIs, Mustache Template,.
                             </p>
                         </li>                        
                         <li class="col-xs-6 col-sm-6 col-md-3">
                             <h3>PHP/MySQL</h3>
                             <i class="php"></i>
                             <p>
-                                PHP, YII Framework, Twig templating, OOP, 
-                                MVC, Wordpress.
+                                PHP, YII Framework 1.x, Twig Template, 
+                                Laravel 5, Blade Template, Slim 3, Mustache Template,
+                                OOP, MVC, Wordpress, MySQL, Redis.
                             </p>
                         </li>                        
                         <li class="col-xs-6 col-sm-6 col-md-3">
                             <h3>Other</h3>
                             <i class="misc"></i>
                             <p>
-                                Git, Grunt, Composer, Scrum/Agile Methodology, Photoshop.
+                                Git, npm, bower, Grunt, Gulp, Composer, Scrum/Agile Methodology, Photoshop.
                             </p>
                         </li>                        
                     </ul>
@@ -83,11 +84,11 @@
                     <!--About Me-->
                     <div class="box">
                         <h2>Обо мне</h2>
-                        <p>High susceptibility to information, self-learning, 
-                            the ability to articulate ideas;
-                            Resistance to stress, high performance in any situation;
-                            Organized, responsible, highly reliable, sociable, 
-                            exercise motivation to achieve new goals.
+                        <p>
+                            Высокая восприимчивость к информации, самообучаемость,
+                            умение доступно сформулировать свои мысли, стрессоустойчивость,
+                            высокая производительность в любой ситуации, организованность,
+                            ответственнрсть, коммуникабельность.
                         </p>
                     </div>
 
@@ -98,56 +99,64 @@
                             <li>
                                 <div class="year pull-left">1989</div>
                                 <div class="description pull-right">
-                                    <h3>I was born in Ukraine, Gorlovka</h3>
+                                    <h3>Рождение</h3>
                                     <p>
-                                        My parents taught me mathematics from an early age. 
-                                        When I went to the first class of school, I already knew how to add and subtract numbers of any length
+                                        Родился в небольшом городе (г. Горловка) на востоке Украины.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="year pull-left">1996</div>
+                                <div class="description pull-right">
+                                    <h3>Школа</h3>
+                                    <p>
+                                        С ранних лет родители учили меня математике и английскому. 
+                                        Когда я пошел в первый класс, уже мог складывать
+                                        и вычитать числа любой длинны.
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="year pull-left">2006</div>
                                 <div class="description pull-right">
-                                    <h3>I finished school</h3>
+                                    <h3>Школа</h3>
                                     <p>
-                                        I studied in class with an extra 
-                                        load of physics and mathematics. In 
-                                        addition, I took physics lesson for 2 
-                                        years and 1.5 years hand-to-hand fighting
+                                        Окончил школу с физико-математическим уколоном. 
+                                        Внеурочные занятия физикой на протяжении 2 лет
+                                        и рукобашным боем на проятжении 1.5 лет.
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="year pull-left">2010</div>
                                 <div class="description pull-right">
-                                    <h3>First degree in computer science</h3>
+                                    <h3>Первая степень. Компьютерные науки.</h3>
                                     <p>
-                                        Four years have passed like a moment. 
-                                        A lot of cources, from basic algorithms, 
-                                        popular languages synatx to develope 
-                                        web and mobile applications.
+                                        Четыре года учебы пролетели как один день. 
+                                        Большое количество курсов, начиная с базовых алгоритмов, 
+                                        популярных языков программирования, заканчивая проектами 
+                                        мобильной и веб-разработки.
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="year pull-left">2011</div>
                                 <div class="description pull-right">
-                                    <h3>Second degree in computer ecological and economic monitoring</h3>
+                                    <h3>Вторая степень. Компьютерный эколого-экономический мониторинг</h3>
                                     <p>
-                                        Using the knowledge gained in the development 
-                                        of algorithms to collect and analyze 
-                                        data from weather stations.<br>
+                                        Применение полученых знаний для разработки
+                                        алгоритмов по сбору и анализу данных с метеостанций.<br>
 
-                                        High score for the defense of the diploma.
+                                        Высший бал в защите деплома.
                                     </p>
                                 </div>
                             </li>
                             <li>
                                 <div class="year pull-left">2014</div>
                                 <div class="description pull-right">
-                                    <h3>I immigrated to Israel</h3>
+                                    <h3>Эмиграция в Израиль</h3>
                                     <p>
-
+                                        Ульпан алеф. Ульпан бет.
                                     </p>
                                 </div>
                             </li>                            
@@ -159,30 +168,129 @@
                         <h2>Опыт</h2>
                         <div class="job clearfix">
                             <div class="col-xs-3">
-                                <div class="where">Private Company</div>
-                                <div class="year">2013-2014</div>
+                                <div class="where">RoutePerfect ltd.</div>
+                                <div class="location">Израиль, Тель-Авив</div>
+                                <div class="year">11.2016-настоящее время<br/>(5 мес.)</div>
                             </div>
                             <div class="col-xs-9">
-                                <div class="profession">Front-end developer / php programmer</div>
+                                <div class="profession">Fullstack web developer</div>
                                 <div class="description">
-                                    Our team has developed gaming resourse. I developed back office to administration of the resource and web application for users.<br>
-                                    I used languages and technoloies like a: HTML5, CSS, SCSS, JavaScript, JQuery, AngularJS, NodeJS, JSON, AJAX, 
-                                    PHP, YII framework, Twig, grunt, Composer, git, etc.<br>
-                                    We practiced Scrum methodology and used Atlassian JIRA Agile for the managment of the project.
+                                    Стартап, идея которого планирование маршрута 
+                                    путешествия по заданным параметрам, и поиск 
+                                    оптимальных полетов, отелей, машин, поездов, 
+                                    аттракций в рамках бюджета. <br><br>
+                                    
+                                    Механизм поиска, сохранения и бронирования 
+                                    билетов на мероприятия в выбраном городе(frontend/backend);<br>
+                                    Поиск и отображение дополнительных "попутных остановок" 
+                                    в конструкторе маршрутов;<br>
+                                    Написание API сервиса для frontend;<br>
+                                    Внедрение MVC микро-фреймворка Slim настройка маршрутизации;<br>
+                                    Рефакторинг верстки, переписывание стилей с использованием препроцессора SCSS;<br>
+                                    Исправление багов.<br><br>
+                                    
+                                    <b>При разработке применялись следующие технологии:</b>
+                                    HTML5, CSS, SCSS, JavaScript, JQuery, BackboneJS + Marionet, 
+                                    PHP 5.6, OOP, Slim micro framework, Mustashe Temlater,
+                                    JSON, AJAX, API, MVC/MV*, Google API, MySQL 5.5, Redis, 
+                                    npm, Composer, gulp, git, Apache + nginx и другие. <br><br>
+                                    
+                                    Мы практиковали методологию Scrum при разработке
+                                    и исользовали Atlassian JIRA для менеджмента проекта.
                                 </div>
                             </div>
                         </div>
                         <div class="job clearfix">
                             <div class="col-xs-3">
-                                <div class="where">PJSC “Concern Stirol”</div>
-                                <div class="year">2012-2013</div>
+                                <div class="where">Mreshet ltd.</div>
+                                <div class="location">Израиль, Хайфа</div>
+                                <div class="year">01.2015-11.2016<br/>(11 мес.)</div>
                             </div>
                             <div class="col-xs-9">
-                                <div class="profession">Specialist of the tender</div>
-                                <div class="description">Search and selection of participants for tender<br>
-                                    Coordination of negotiations between the customer and perfomer<br>
-                                    Organize presentations and meetings<br>
-                                    Analyze of propositions and preparation to completion of the tender procedure.</div>
+                                <div class="profession">Backend developer</div>
+                                <div class="description">
+                                    На момент начала работы, компания была в переходном периоде с outsource формата
+                                    в insource формат. <br><br>
+                                    
+                                    Поддержка существующих проектов компании; <br>
+                                    Разработка конструктора мультиплатформенных HTML5 приложений;<br>
+                                    Переработа мультиплатформенного движка приложения основанного на JS;<br>
+                                    Разработка модулей многоразового мультиплатформенного приложения;<br>
+                                    Переработка механизма навикации внутри приложений;<br>
+                                    Сбор и анализ данных об использовании апликациями;<br>
+                                    Написание модулей рассылки email, sms, генерации pdf файлов;<br>
+                                    Оптимизация базы данных и запросов к ней;<br>
+                                    Доступ к разделам админ панели на основе ролей(RBAC);<br>
+                                    Установка канала связи между апликацие и API сервисом.<br>
+                                    Внедрение системы тасков и баг трегинга на базе Atlassian JIRA.<br><br>
+                                    
+                                    <b>При разработке применялись следующие технологии:</b>
+                                    HTML5, CSS, JavaScript, JQuery, AngularJS 1.x, ChartJS, PHP 5.6, 
+                                    Wordpress, Laravel 5, Blade Temlater,
+                                    NodeJS, PhantomJS, JSON, AJAX, API, MVC/MV*, Google API, 
+                                    XML, MySQL, Composer, git, Apache и другие.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="col-xs-3">
+                                <div class="where">Завод электроники "Fibernet"</div>
+                                <div class="location">Израиль, Йокнеам Илит</div>
+                                <div class="year">02.2015-01.2016<br/>(1 год)</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Рабочий сборщик</div>
+                                <div class="description">
+                                    Сборка бытовых приборов, оборудования для оптических сетей; <br>
+                                    Тестирование;<br>
+                                    Упаковка;<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="col-xs-3">
+                                <div class="where">Частная Out-source компания</div>
+                                <div class="location">Украина, Горловка</div>
+                                <div class="year">05.2013-07.2014<br/>(1 год и 3 мес)</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Front-end/back-end developer</div>
+                                <div class="description">
+                                    Разработка продукта по приему 
+                                    ставок на спортивные мероприятия и онлайн-покер, в частности: <br>
+                                    &emsp; - переписывание движка сайта на Yii Framework; <br>
+                                    &emsp; - разработка компонентов бэк-офиса администратора; <br>
+                                    &emsp; - разработка JS-приложения для клиента; <br>
+                                    &emsp; - разработка примитивного игрового сервера для ставок на результаты раздач игры покер; <br>
+                                    &emsp; - разработка покер-клиента. <br><br>
+                                    
+                                    <b>При разработке применялись следующие технологии: </b>
+                                    HTML5, CSS, SCSS/Compass, JavaScript, JQuery, AngularJS, NodeJS, JSON, AJAX, MVC/MV*,
+                                    PHP, OOP, YII Framework, Twig, Grunt, npm, gem, bower, Composer, git, и другие.<br>
+                                    Мы практиковали методологию Scrum при разработке
+                                    и исользовали Atlassian JIRA для менеджмента проекта.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="job clearfix">
+                            <div class="col-xs-3">
+                                <div class="where">ПАО “Концерн Стирол”</div>
+                                <div class="location">Украина, Горловка</div>
+                                <div class="year">02.2012-02.2013<br/>(1 год)</div>
+                            </div>
+                            <div class="col-xs-9">
+                                <div class="profession">Специалист тендерного отдела</div>
+                                <div class="description">Поиск и выбор поставщика услуг на основе тендера<br>
+                                    Изучение технической документации по проектам<br>
+                                    Анализ рынка услуг по вереному вопросу<br>
+                                    Установка контактов с потенциальными исполнителями<br>
+                                    Организация\ведение переговоров с участием закачика и исполнителя<br>
+                                    Организация и проведение презентаций<br>
+                                    Анализ предложений с учетом технических и экономических аспектов<br>
+                                    Подготовка документов к завершению тендера и передачи всей документации в отдел договоров.
+                                    <br><br>
+                                    Зарекомендовал себя как ответственный исполнитель. 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -224,24 +332,27 @@
                     <div class="box clearfix">
                         <h2>Навыки</h2>
                         <div class="skills">
-                            <div class="skill-item" data-percent="0.74">HTML</div>
-                            <div class="skill-item" data-percent="0.74">CSS</div>
-                            <div class="skill-item" data-percent="0.6">JavaScript</div>
-                            <div class="skill-item" data-percent="0.5">PHP</div>
-                            <div class="skill-item" data-percent="0.25">MySQL</div>
-
+                            <div class="skill-item" data-percent="0.8">HTML</div>
+                            <div class="skill-item" data-percent="0.8">CSS</div>
+                            <div class="skill-item" data-percent="0.75">JavaScript</div>
+                            <div class="skill-item" data-percent="0.70">AngularJS 1.x</div>
+                            <div class="skill-item" data-percent="0.70">JQuery</div>
+                            <div class="skill-item" data-percent="0.75">PHP</div>
+                            <div class="skill-item" data-percent="0.70">Laravel 5</div>
+                            <div class="skill-item" data-percent="0.65">MySQL</div>
+                            
                             <div class="skill-scale">
                                 <div class="scale scale-left">
-                                    Младший джедай
+                                    Начинающий
                                 </div>
                                 <div class="scale scale-left">
-                                    <span>Джедай-падаван</span>
+                                    <span>Опытный</span>
                                 </div>
                                 <div class="scale scale-right">
-                                    <span>Рыцарь-джедай</span>
+                                    <span>Эксперт</span>
                                 </div>
                                 <div class="scale scale-right">
-                                    Мастер-джедай
+                                    Мастер
                                 </div>
                             </div>
                         </div>
@@ -266,7 +377,7 @@
                                 <div class="icon-group pull-right">
                                     <i class="fa fa-star red"></i>
                                     <i class="fa fa-star red"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star red"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                 </div>

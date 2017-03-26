@@ -186,7 +186,8 @@ body{
     font-size:1.4em; 
     font-weight:700
 }
-.job .year{ 
+.job .year,
+.job .location{ 
     font-size:1.3em; 
     opacity:.7
 }
@@ -379,4 +380,21 @@ i.misc{
 }
 .language-skill i.red{ 
     color:red
+}
+
+.lang-switcher{
+    position: absolute;
+    padding: .5em 1em;
+    right: 0;
+}
+.lang-switcher a{
+    color: inherit;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.lang-switcher a:hover,
+.lang-switcher a:active,
+.lang-switcher a.active{
+    color: #EC7263;
+    text-decoration: none;
 }
