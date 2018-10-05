@@ -1,0 +1,23 @@
+version: '3.2'
+
+services:
+  ngnix:
+    image: nginx:1.15-alpine
+    container_name: cv.me
+    volumes:
+     - ./config/site.conf:/etc/nginx/conf.d/site.conf
+     - ./src/:/var/www/
+    ports:
+     - "80:80"
+    networks:
+      dev_network:
+        ipv4_address: 172.16.10.5
+
+networks:
+  dev_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      -
+        subnet: 172.16.10.0/24
